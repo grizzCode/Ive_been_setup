@@ -165,6 +165,34 @@ Location will give you information about the current url in your browser.
 # React Context
 [Documentation](https://reactjs.org/docs/context.html)
 
+###### *create provider*
+```javascript
+import React from "react";
+
+// Set Up The Initial Context
+export const XXXContext = React.createContext();
+// This is exported if we are using the useContext hook
+
+// Create an exportable consumer that can be injected into components
+export const XXXConsumer = XXXContext.Consumer;
+
+// Create the provider
+class XXXProvider extends React.Component {
+  state = {
+    xxx: xxx,
+    ...
+  };
+
+  render() {
+    return (
+      <XXXContext.Provider value={this.state}>
+        { this.props.children }
+      </XXXContext.Provider>
+    )
+  }
+}
+export default XXXProvider;
+```
 
 # React Hooks
 
