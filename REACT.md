@@ -65,12 +65,14 @@ const StyledCard = styled(Card)`
 ....
 before
     <Card>
-  after
+after
     <StyledCard>
 ```
 We passed the <Card> semantic component into our styled-component. We are now styling the <Card> component instead of some other html element.
 
 You can style any third party library this way that takes in a className prop.
+
+[Theming](https://styled-components.com/docs/advanced#theming)  
 ***
 ### Material-UI
 
@@ -101,6 +103,7 @@ import { Route, Switch } from 'react-router-dom'
    <Switch>
     <Route exact path="/" component={Home} />
     <Route path="/XXX" component={XXX} />
+    <Route path="/YYY/:id" component={YYY} />
     ...
     <Route component={NoMatch} />
   </Switch>
@@ -114,20 +117,39 @@ import { Link } from 'react-router-dom'
   <Link to="/">
     <Button color="black">Home</Button>
   </Link>
+```  
+#### HISTORY FUNCTIONS
+**push()**
+```javascript
+this.props.history.push('/')
 ```
+-Push to new router route passed in as argument.
+**goBack()**
+```javascript
+this.props.history.goBack()
+```  
+-Goes back to previous location.
 
-history -  history gives you access to historical information about your component. You will get access to functions like push( ) (push to new url) or goBack( ) (goes back to previous location)
-location -  location will give you information about the current url in your browser.
-match  -  match also gives you access to information about the url. The most important thing about this prop is the ability to access url params ( /products/:id )
+**match()**
+```javascript
+this.props.history.match.params.id
+```  
+-The most important thing about this prop is the ability to access url params ( Route: /products/:id ) Note that the name ':id' in the route must match the 'id' in .match.params.**id**
+
+**location()**
+-Location will give you information about the current url in your browser.
 
 
-Axios
------
+
+# Axios
 
 
 
-React Context
------
+
+# React Context
+
+
+# React Hooks
 
 
 
