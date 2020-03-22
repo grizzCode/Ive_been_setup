@@ -13,8 +13,10 @@ Frontend Libraries
 
 ```yarn add antd```
 
+```
 ###### *index.js*
-```import 'antd/dist/antd.css'```
+import 'antd/dist/antd.css'
+```
 
 
 
