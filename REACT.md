@@ -75,6 +75,20 @@ You can style any third party library this way that takes in a className prop.
 [Theming](https://styled-components.com/docs/advanced#theming)  
 ***
 ### Material-UI
+```yarn add @material-ui/core```  
+
+[Documentation](https://material-ui.com/getting-started/installation/) 
+
+###### *index.js*
+```javascript
+import CssBaseline from '@material-ui/core/CssBaseline'  
+```
+
+###### *in component*
+```javascript
+import XXX from '@material-ui/core/XXX';
+```
+Note there needs to be an individual import statement for each component because they all use separate files. 
 
 
 # React Router
@@ -123,23 +137,23 @@ import { Link } from 'react-router-dom'
 ```javascript
 this.props.history.push('/')
 ```
--Push to new router route passed in as argument.  
+Push to new router route passed in as argument.  
 
 **goBack()**
 ```javascript
 this.props.history.goBack()
 ```  
--Goes back to previous location.
+Goes back to previous location.
 
 **match()**
 ```javascript
 this.props.history.match.params.id
 ```  
--The most important thing about this prop is the ability to access url params ( Route: /products/:id ) Note that calling ':id' in the route must match the 'id' in .match.params.**id**
+The most important thing about this prop is the ability to access url params ( Route: /products/:id ) Note that calling ':id' in the route must match the 'id' in .match.params.**id**
 
 **location()**  
 
--Location will give you information about the current url in your browser.
+Location will give you information about the current url in your browser.
 
 
 
@@ -149,6 +163,7 @@ this.props.history.match.params.id
 
 
 # React Context
+[Documentation](https://reactjs.org/docs/context.html)
 
 
 # React Hooks
