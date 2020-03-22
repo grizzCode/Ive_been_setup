@@ -123,7 +123,8 @@ import { Link } from 'react-router-dom'
 ```javascript
 this.props.history.push('/')
 ```
--Push to new router route passed in as argument.
+-Push to new router route passed in as argument.  
+
 **goBack()**
 ```javascript
 this.props.history.goBack()
@@ -134,9 +135,10 @@ this.props.history.goBack()
 ```javascript
 this.props.history.match.params.id
 ```  
--The most important thing about this prop is the ability to access url params ( Route: /products/:id ) Note that the name ':id' in the route must match the 'id' in .match.params.**id**
+-The most important thing about this prop is the ability to access url params ( Route: /products/:id ) Note that calling ':id' in the route must match the 'id' in .match.params.**id**
 
-**location()**
+**location()**  
+
 -Location will give you information about the current url in your browser.
 
 
