@@ -9,12 +9,29 @@ Frontend Libraries
 
 [Setup Documentation](https://ant.design/docs/react/use-with-create-react-app)
 
-[Components](https://ant.design/components/button/)
+[Components](https://ant.design/components/button/)  
 
-```yarn add antd```  
+```yarn add antd```    
 
 ###### *index.js*
 ```import 'antd/dist/antd.css'```  
+
+###### *inside component*
+```
+import { XXX } from 'antd';
+import { XXX } from '@ant-design/icons'
+```   
+
+### Semantic-UI  
+
+[Setup Documentation](https://react.semantic-ui.com/usage)
+
+[Components](https://react.semantic-ui.com/collections/grid/)   
+  
+```yarn add semantic-ui-react semantic-ui-css```
+
+### Styled Components
+### Material-UI
 
 
 React Router
