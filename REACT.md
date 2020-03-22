@@ -165,7 +165,7 @@ Location will give you information about the current url in your browser.
 # React Context
 [Documentation](https://reactjs.org/docs/context.html)
 
-###### *create provider*
+###### *Create Provider*
 ```javascript
 import React from "react";
 
@@ -193,6 +193,41 @@ class XXXProvider extends React.Component {
 }
 export default XXXProvider;
 ```
+
+###### *Wrap Appliction in Provider - index.js*
+```javascript
+...
+import XXXProvider from "./providers/XXXProvider";
+
+ReactDOM.render(
+  <XXXProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </XXXProvider>,
+  document.getElementById('root')
+);
+```
+###### *in component*
+
+```javascript
+import { XXXConsumer, } from "../providers/XXXProvider";
+
+//wrap components in ...Consumer tags, which then gives access to state values passed down by the Provider:
+ <XXXConsumer>
+    { value => (
+    <div>
+      { value.state_item }
+    </div>
+    )}
+  </XXXConsumer>
+```
+
+
+#### Passing Functions Provider to Consumer
+
+
+
 
 # React Hooks
 
