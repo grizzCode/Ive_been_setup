@@ -76,10 +76,9 @@ import { Route, Switch } from 'react-router-dom'
 
 ###### *Link*
 
+```
 import { Link } from 'react-router-dom'  
 
-
-```
   <Link to="/">
     <Button color="black">Home</Button>
   </Link>
