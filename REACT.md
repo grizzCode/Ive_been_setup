@@ -6,9 +6,10 @@ Create-React-App
 Frontend Libraries
 -----
 ### Ant Design
+[Setup Documentation](https://ant.design/docs/react/use-with-create-react-app)
+
 ```yarn add antd```
 
-[Setup Documentation](https://ant.design/docs/react/use-with-create-react-app)
 ###### index.js
 ```import 'antd/dist/antd.css'```
 
