@@ -10,7 +10,7 @@ Frontend Libraries
 
 ```yarn add antd```
 
-###### index.js
+###### *index.js*
 ```import 'antd/dist/antd.css'```
 
 React Router
