@@ -7,11 +7,11 @@ Frontend Libraries
 -----
 ### Ant Design
 [Setup Documentation](https://ant.design/docs/react/use-with-create-react-app)
-
+[Components](https://ant.design/components/button/)
 ```yarn add antd```
 
 
-###### *index.js*
+###### index.js
 ```import 'antd/dist/antd.css'```
 
 React Router
@@ -31,7 +31,6 @@ Axios
 
 React Context
 -----
-
 
 
 
