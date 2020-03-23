@@ -225,7 +225,19 @@ import { XXXConsumer, } from "../providers/XXXProvider";
 
 
 #### Passing Functions Provider to Consumer
-
+###### *XXXProvider.js*
+```javascript
+class XXXProvider extends React.Component {
+  state = {
+  ...,
+  // Set function as part of state to be passed as a prop to Consumer.
+  updateXXX: (info) => this.updateXXX(info),
+};
+  //Declare function to modify state:
+updateXXX = (info) => {
+  this.setState({ ...info, });
+}
+```
 
 
 
