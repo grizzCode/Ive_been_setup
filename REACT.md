@@ -233,13 +233,35 @@ class XXXProvider extends React.Component {
   // Set function as part of state to be passed as a prop to Consumer.
   updateXXX: (info) => this.updateXXX(info),
 };
-  //Declare function to modify state:
+  //Declare function to modify state as-needed:
 updateXXX = (info) => {
   this.setState({ ...info, });
 }
 ```
 
+###### *Use in Component*
+```javascript
+handleSubmit = (e) => {
+...
+// Example use of function passed from Provider:
+  this.props.updateAccount(account);
+}
 
+...
+
+const ConnectedAccountForm = (props) => {
+  return (
+    <XXXConsumer>
+      { value => (
+        <XXXForm 
+          { ...props }
+          prop1={value.value1}
+          //We can call the function in our component via:
+          updateXXX={value.updateXXX}
+        />
+      )}
+    </XXXConsumer>
+```
 
 # React Hooks
 
