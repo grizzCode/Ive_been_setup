@@ -283,7 +283,37 @@ const ConnectedAccountForm = (props) => {
 ```
 
 # React Hooks
+[Documentation](https://reactjs.org/docs/hooks-intro.html)
 
+**useContext()**
 
+###### *XXXProvider.js*
+```javascript
+// Add an export to React.createContext const in Provider:
+export const XXXContext = React.createContext();
+```
 
+###### *Use in Component*
+```javascript
+import { XXXContext, } from "../providers/XXXProvider";
 
+const StateRender = () => {
+  const { username, dateJoined, membershipLevel, } = useContext(XXXContext);
+
+  return (
+    <Card>
+      <Card.Content>
+        <Card.Header>{ username }</Card.Header>
+        <Card.Meta>
+          Date Joined: { dateJoined }
+        </Card.Meta>
+      </Card.Content>
+      <Card.Content>
+        <p>Membership Level: { membershipLevel }</p>
+      </Card.Content>
+    </Card>
+  );
+};
+
+export default StateRender;
+```
