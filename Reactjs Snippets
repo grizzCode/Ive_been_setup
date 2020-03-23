@@ -1,0 +1,29 @@
+Trigger	Content
+rcc→	class component skeleton
+
+
+rcjc→	class component skeleton without import and default export lines
+rcfc→	class component skeleton that contains all the lifecycle methods
+rwwd→	class component without import statements
+
+rsc→	stateless component skeleton
+
+rsf→	stateless named function skeleton
+rsfp→	stateless named function with prop types skeleton
+rsi→	stateless component with prop types and implicit return
+
+
+con→	class default constructor with props
+est→	empty state object
+cwm→	componentWillMount method
+cdm→	componentDidMount method
+cwup→	componentWillUpdate method
+cdup→	componentDidUpdate method
+cwun→	componentWillUnmount method
+cdc→	componentDidCatch method
+ren→	render method
+sst→	this.setState with object as parameter
+ssf→	this.setState with function as parameter
+props→	this.props
+state→	this.state
+
