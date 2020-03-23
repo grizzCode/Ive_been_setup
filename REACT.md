@@ -47,7 +47,7 @@ import { XXX } from '@ant-design/icons'
 ```javascript
 import styled from 'styled-components';
 ```
-###### *example when we can use 'as' prop*
+###### *Example when we can use 'as' prop*
 ```javascript
 <Header as={HeaderText}>...</Header>
 ....
@@ -57,7 +57,7 @@ const HeaderText = styled.h1`
 `;
 ```  
 
-###### *example passing library component into styled*
+###### *Example passing library component into styled*
 ```javascript
 const StyledCard = styled(Card)`
   height: 200px;
