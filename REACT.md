@@ -11,7 +11,8 @@
 
 [Components](https://ant.design/components/button/)  
 
-```yarn add antd```    
+```yarn add antd```  
+```yarn add @ant-design/icons@4.0.0```
 
 ###### *index.js*
 ```import 'antd/dist/antd.css'```  
