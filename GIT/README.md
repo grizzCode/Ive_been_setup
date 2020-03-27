@@ -1,8 +1,14 @@
 # Git Flows & Commands
+[Git Documentation](https://git-scm.com/doc)
+[Github Documentation](https://help.github.com/en/github)
+
 ###### *Remote URLs*
-```git remote add origin _______```
+```git remote add origin *repo_url_here*```
+
 Adds remote repository to directory.
+
 ```git remote rm *name*```
+
 Removes remote repo url from project.
 
 ###### *Branches*
