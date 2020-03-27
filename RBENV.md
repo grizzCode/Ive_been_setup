@@ -17,6 +17,8 @@ rbenv rehash	                   Re-write binstubs
 ```
 ### Locally
 * Application-specific version numbers are stored in .ruby-version.
+
+Run commands in directory where project is located. 
 ```
 rbenv local 2.5.1	              Use Ruby 2.5.1 in project
 rbenv local --unset	            Undo above
