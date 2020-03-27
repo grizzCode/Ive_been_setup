@@ -19,6 +19,8 @@ rbenv rehash	                   Re-write binstubs
 * Application-specific version numbers are stored in .ruby-version.
 
 Run commands in directory where project is located. 
+
+Can specify / modify ruby version in Gemfile, then delete Gemlock file and ruby-version file in a rails project. Then run:
 ```
 rbenv local 2.5.1	              Use Ruby 2.5.1 in project
 rbenv local --unset	            Undo above
