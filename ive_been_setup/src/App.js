@@ -1,10 +1,20 @@
 import React from 'react';
 import './App.css';
-import ResponsiveDrawer from './components/ResponsiveDrawer';
+import MiniDrawer from './components/MiniDrawer';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+
+const darkTheme = createMuiTheme({
+  palette: {
+    type: 'dark',
+  },
+});
 
 function App() {
   return (
-   <ResponsiveDrawer/>
+    <ThemeProvider theme={darkTheme}>
+      <MiniDrawer/>
+    </ThemeProvider>
+   
   );
 }
 
