@@ -5,8 +5,8 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { Paper } from '@material-ui/core';
 import SimplePaper from './Code';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -42,10 +42,9 @@ export default function Rails() {
           <Typography className={classes.heading}>Create Rails Application</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget
-            maximus est, id dignissim quam.
-          </Typography>
+          <code class="code">
+            const Test = codeHighlighting.
+          </code >
           </ExpansionPanelDetails>
           <ExpansionPanelDetails>
           <SimplePaper/>
@@ -110,3 +109,4 @@ export default function Rails() {
     </div>
   );
 }
+

@@ -7,10 +7,9 @@ export default function SimplePaper() {
 
   return (
     <div>
-      <Paper elevation={3} style={{backgroundColor: '#010406'}}>
+      <Paper elevation={3} style={{backgroundColor: '#010406', padding: '6px'}}>
       <div style={{fontFamily: 'Monaco', color: '#87BDF5'}}>
-      Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus, varius pulvinar
-            diam eros in elit. Pellentesque convallis laoreet laoreet.
+        rails new react-with-rails -d postgresql --api
       </div>
       </Paper>
       
