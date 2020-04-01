@@ -1,14 +1,18 @@
 import React from 'react';
 import './App.css';
-import MiniDrawer from './components/MiniDrawer';
+import MiniDrawer from './components/Drawer';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import lightBlue from '@material-ui/core/colors/lightBlue'
+
 
 const darkTheme = createMuiTheme({
   palette: {
     type: 'dark',
-    primary: lightBlue,
-    secondary: lightBlue,
+    primary: {
+      main: '#90caf9',
+    },
+    secondary: {
+      main: '#90caf9',
+    },
   },
 });
 
