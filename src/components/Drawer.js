@@ -11,6 +11,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import LocalCafeIcon from '@material-ui/icons/LocalCafe';
 import Rails from './Rails';
 import { Route, Switch } from 'react-router-dom'  
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 const drawerWidth = 160;
 
@@ -44,7 +46,7 @@ export default function ClippedDrawer() {
       <CssBaseline />
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
-        <LocalCafeIcon/>
+        <FontAwesomeIcon icon={faCoffee} />
           <Typography variant="h5" noWrap style={{marginLeft: '40px'}}>
              I'VE BEEN SETUP
           </Typography>
