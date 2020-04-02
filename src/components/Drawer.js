@@ -8,12 +8,12 @@ import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import LocalCafeIcon from '@material-ui/icons/LocalCafe';
 import Rails from './Rails';
 import { Route, Switch } from 'react-router-dom' 
-import { DiJsBadge } from "react-icons/di"; 
+import { DiHeroku, DiRor, DiGit, DiReact, DiPostgresql } from "react-icons/di"; 
+import { FaWrench, FaCheckDouble } from "react-icons/fa";
 
-const drawerWidth = 160;
+const drawerWidth = 90;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -44,8 +44,7 @@ export default function ClippedDrawer() {
     <div className={classes.root}>
       <CssBaseline />
       <AppBar position="fixed" className={classes.appBar}>
-        <Toolbar>
-        <DiJsBadge/>
+        <Toolbar> 
           <Typography variant="h5" noWrap style={{marginLeft: '40px'}}>
              I'VE BEEN SETUP
           </Typography>
@@ -61,25 +60,25 @@ export default function ClippedDrawer() {
         <div className={classes.toolbar} />
         <List>
             <ListItem button key={2}>
-              <ListItemText primary={'RAILS'} />
+              <div style={{fontSize: '3.5em'}}><DiRor/></div>
             </ListItem>
             <ListItem button key={3}>
-              <ListItemText primary={'GIT'} />
+            <div style={{fontSize: '3.5em'}}><DiGit/></div>
             </ListItem>
             <ListItem button key={5}>
-              <ListItemText primary={'REACT'} />
+            <div style={{fontSize: '3.5em'}}><DiReact/></div>
             </ListItem>
             <ListItem button key={6}>
-              <ListItemText primary={'SQL'} />
+            <div style={{fontSize: '3.5em'}}><DiPostgresql/></div>
             </ListItem>
             <ListItem button key={7}>
-              <ListItemText primary={'DEPLOYMENT'} />
+            <div style={{fontSize: '3.5em'}}><DiHeroku/></div>
             </ListItem>
             <ListItem button key={8}>
-              <ListItemText primary={'TESTING'} />
+            <div style={{fontSize: '3.0em'}}><FaCheckDouble/></div>
             </ListItem>
             <ListItem button key={9}>
-              <ListItemText primary={'TOOLS'} />
+            <div style={{fontSize: '3.0em'}}><FaWrench/></div>
             </ListItem>
         </List>
       </Drawer>
