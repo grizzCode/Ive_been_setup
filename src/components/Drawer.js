@@ -6,6 +6,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
+import Tooltip from '@material-ui/core/Tooltip';
 import ListItem from '@material-ui/core/ListItem';
 import Rails from './Rails';
 import { Route, Switch } from 'react-router-dom' 
@@ -61,28 +62,40 @@ export default function ClippedDrawer() {
         <List>
             <ListItem button key={2}>
               <Link to="/rails">
-                <div style={{fontSize: '3.5em', color: 'lightgrey'}}>
-                  <DiRor/>
-                </div>
+              <Tooltip title="Rails" placement="right">
+                <div style={{fontSize: '3.5em', color: 'lightgrey'}}><DiRor/></div>
+              </Tooltip>   
               </Link>
             </ListItem>
             <ListItem button key={3}>
-            <div style={{fontSize: '3.5em'}}><DiGit/></div>
+              <Tooltip title="Git / GitHub" placement="right">
+                <div style={{fontSize: '3.5em'}}><DiGit/></div>
+              </Tooltip>
             </ListItem>
             <ListItem button key={5}>
-            <div style={{fontSize: '3.5em'}}><DiReact/></div>
+              <Tooltip title="React" placement="right">
+                <div style={{fontSize: '3.5em'}}><DiReact/></div>
+              </Tooltip>
             </ListItem>
             <ListItem button key={6}>
-            <div style={{fontSize: '3.5em'}}><DiPostgresql/></div>
+              <Tooltip title="SQL / Database" placement="right">
+              <div style={{fontSize: '3.5em'}}><DiPostgresql/></div>
+              </Tooltip>
             </ListItem>
             <ListItem button key={7}>
-            <div style={{fontSize: '3.5em'}}><DiHeroku/></div>
+              <Tooltip title="Hosting / Deployment" placement="right">
+                <div style={{fontSize: '3.5em'}}><DiHeroku/></div>
+              </Tooltip>
             </ListItem>
             <ListItem button key={8}>
-            <div style={{fontSize: '2.6em'}}><FaCheckDouble/></div>
+              <Tooltip title="Testing" placement="right">
+                <div style={{fontSize: '2.6em'}}><FaCheckDouble/></div>
+              </Tooltip>
             </ListItem>
             <ListItem button key={9}>
-            <div style={{fontSize: '2.6em'}}><FaWrench/></div>
+              <Tooltip title="Tools" placement="right">
+                <div style={{fontSize: '2.6em'}}><FaWrench/></div>
+              </Tooltip>
             </ListItem>
         </List>
       </Drawer>
@@ -98,3 +111,5 @@ export default function ClippedDrawer() {
     </div>
   );
 }
+
+

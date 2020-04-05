@@ -28,7 +28,7 @@ export default function Rails() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography className={classes.heading}>CREATE RAILS APP</Typography>
+          <Typography className={classes.heading}>RAILS APPLICATION</Typography>
           <Typography className={classes.secondaryHeading}>
             <a href='https://guides.rubyonrails.org/getting_started.html' 
             style={{color:'lightgrey', fontSize:'14px'}}>Documentation</a>
@@ -50,7 +50,7 @@ export default function Rails() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography className={classes.heading}>CREATE RAILS APP --API</Typography>
+          <Typography className={classes.heading}>RAILS APPLICATION --API</Typography>
           <Typography className={classes.secondaryHeading}>
             <a href='https://guides.rubyonrails.org/api_app.html' 
             style={{color:'lightgrey', fontSize:'14px'}}>Documentation</a>
