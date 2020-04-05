@@ -7,13 +7,13 @@ import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 import Rails from './Rails';
 import { Route, Switch } from 'react-router-dom' 
 import { DiHeroku, DiRor, DiGit, DiReact, DiPostgresql } from "react-icons/di"; 
 import { FaWrench, FaCheckDouble } from "react-icons/fa";
+import { Link } from 'react-router-dom'
 
-const drawerWidth = 90;
+const drawerWidth = 80;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -46,7 +46,7 @@ export default function ClippedDrawer() {
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar> 
           <Typography variant="h5" noWrap style={{marginLeft: '40px'}}>
-             I'VE BEEN SETUP
+             IVE_BEEN_SETUP
           </Typography>
         </Toolbar>
       </AppBar>
@@ -60,7 +60,11 @@ export default function ClippedDrawer() {
         <div className={classes.toolbar} />
         <List>
             <ListItem button key={2}>
-              <div style={{fontSize: '3.5em'}}><DiRor/></div>
+              <Link to="/rails">
+                <div style={{fontSize: '3.5em', color: 'lightgrey'}}>
+                  <DiRor/>
+                </div>
+              </Link>
             </ListItem>
             <ListItem button key={3}>
             <div style={{fontSize: '3.5em'}}><DiGit/></div>
@@ -75,10 +79,10 @@ export default function ClippedDrawer() {
             <div style={{fontSize: '3.5em'}}><DiHeroku/></div>
             </ListItem>
             <ListItem button key={8}>
-            <div style={{fontSize: '3.0em'}}><FaCheckDouble/></div>
+            <div style={{fontSize: '2.6em'}}><FaCheckDouble/></div>
             </ListItem>
             <ListItem button key={9}>
-            <div style={{fontSize: '3.0em'}}><FaWrench/></div>
+            <div style={{fontSize: '2.6em'}}><FaWrench/></div>
             </ListItem>
         </List>
       </Drawer>
@@ -87,10 +91,7 @@ export default function ClippedDrawer() {
         
         <Switch>
           {/* <Route exact path="/" component={Home} /> */}
-          <Route path="/rails" component={Rails} />
-          {/* <Route path="/YYY/:id" component={YYY} /> */}
-          ...
-          {/* <Route component={NoMatch} /> */}
+          <Route exact path="/rails" component={Rails} />
         </Switch>
     
       </main>
