@@ -128,7 +128,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-// const codeString = " function addOne = () => { return ( 1 + 1)}"
 
 const codeString =`
 function sum(...theArgs) {
@@ -142,6 +141,3 @@ console.log(sum(1, 2, 3, 4));
 // expected output: 10
 `
 
-{/* <SyntaxHighlighter language="javascript" style={tomorrowNightEighties}>
-{codeString}
-</SyntaxHighlighter> */}

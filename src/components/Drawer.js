@@ -9,6 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import Tooltip from '@material-ui/core/Tooltip';
 import ListItem from '@material-ui/core/ListItem';
 import Rails from './Rails';
+import ReactApp from './ReactApp';
 import { Route, Switch } from 'react-router-dom' 
 import { DiHeroku, DiRor, DiGit, DiReact, DiPostgresql } from "react-icons/di"; 
 import { FaWrench, FaCheckDouble } from "react-icons/fa";
@@ -72,11 +73,13 @@ export default function ClippedDrawer() {
                 <div style={{fontSize: '3.5em'}}><DiGit/></div>
               </Tooltip>
             </ListItem>
-            <ListItem button key={5}>
-              <Tooltip title="React" placement="right">
-                <div style={{fontSize: '3.5em'}}><DiReact/></div>
-              </Tooltip>
-            </ListItem>
+            <Link to="/react">
+              <ListItem button key={5}>
+                <Tooltip title="React" placement="right">
+                  <div style={{fontSize: '3.5em', color: 'lightgrey'}}><DiReact/></div>
+                </Tooltip>
+              </ListItem>
+            </Link>
             <ListItem button key={6}>
               <Tooltip title="SQL / Database" placement="right">
               <div style={{fontSize: '3.5em'}}><DiPostgresql/></div>
@@ -103,8 +106,8 @@ export default function ClippedDrawer() {
         <div className={classes.toolbar} />
         
         <Switch>
-          {/* <Route exact path="/" component={Home} /> */}
           <Route exact path="/rails" component={Rails} />
+          <Route exact path="/react" component={ReactApp} />
         </Switch>
     
       </main>
